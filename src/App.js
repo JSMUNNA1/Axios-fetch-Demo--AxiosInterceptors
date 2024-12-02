@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AxiosCrud from './Axios/AxiosCrud';
+import AxiosInterceptorsCrud from './AxiosInstant/AxiosInstaintCrud';
+import GetData from './Comopnet/GetData';
+import GetDataViaId from './Comopnet/GetDataViaId';
+import PostData from './Comopnet/PostData';
 
 function App() {
+  console.log(process.env.REACT_APP_URL,"YES..");
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        //Using Fetch
+      //  <>
+      //  <GetDataViaId></GetDataViaId>
+      //  <PostData></PostData>
+      //  <GetData></GetData>
+      //  </>
+
+    //  using Axios
+    //   <>
+    // <AxiosCrud></AxiosCrud>
+    //   </>
+
+    //using AxiosInstant
+    <>
+    <AxiosInterceptorsCrud></AxiosInterceptorsCrud>
+    </>
   );
 }
 
